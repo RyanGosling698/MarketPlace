@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'Gropled';
+    src: url(fonts/gropled-bold.woff2), 
+    url(fonts/gropled-bold.woff);
+    font-style: normal;
+    font-display:swap;
+}
+@font-face {
+    font-family: 'Manrope';
+    src: url(fonts/regular.woff2), 
+    url(fonts/regular.woff);
+    font-style: normal;
+    font-display:swap;
+}
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    
+
+}
+
+.container-header{
+    color:white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    background-color: none;
+    user-select: none;
+    
+}
+
+.logo{ display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:40px;
+    left:80px;
+    color:white;
+    font-family: "Gropled" , sans-serif ;
+    font-size:40px;
+   
+}
+.nav-item{padding:10px;
+    text-decoration: none;
+    font-size:  16px;
+    margin:32px;
+    font-family: Manrope, sans-serif;
+    color:white;
+    font-weight: 700;
+    border-radius: 20px;
+    min-width: 50px;
+}   
+.nav-item:hover{
+   
+    border-radius: 20px;
+    background-color:white;
+    color:black;
+    transition: 1.5s;
+    
+}
+
+.nav-item:not(:hover){
+    border-radius: 20px;
+    background-color:black;
+    color:white;
+    transition:  1s;
+  
+}
+.container2{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   height:70px;
+   background-color:none;
+   
+    position: relative;
+    top:25px;
+    left: 350px;
+}
+.login>*{font-family: 'Manrope' ,sans-serif;
+    margin:10px;
+    font-size: 18px;
+    border-radius: 100px;
+}
+
+
+.regis{background-color: transparent;
+    color:white;
+    border: 2px solid white;
+    height:60px;
+    width:177px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+}
+.regis:hover{
+    border-color: white;
+    box-shadow: 0 0 0 white;
+    animation-name: box;
+    animation-duration: 1.1s; 
+    animation-fill-mode: forwards;
+    
+}
+.regis:not(:hover){
+    border-color: white;
+    box-shadow: 0 0 0 white;
+    animation-name: box2;
+    animation-duration: 1s; 
+    animation-fill-mode: forwards;
+}
+@keyframes box2 {
+    0%{border: 4px solid;
+        box-shadow:0 0 27px;
+    }
+    100%{border: 4px solid;
+        box-shadow:#27272c;
+    }
+}
+
+@keyframes box {
+    0%{border: 4px solid;
+        box-shadow:#27272c;
+    }
+    100%{border: 4px solid;
+        box-shadow:0 0 27px;
+    }
+    
+}
+
+
+
+
+
+.log{color:white;
+    border: 2px solid white;
+    height:60px;
+    width:100px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+}
+.log:hover{
+    border-color: white;
+    box-shadow: 0 0 0 white;
+    animation-name: box;
+    animation-duration: 1.1s; 
+    animation-fill-mode: forwards;
+    
+}
+.log:not(:hover){
+    border-color: white;
+    box-shadow: 0 0 0 white;
+    animation-name: box2;
+    animation-duration: 1s; 
+    animation-fill-mode: forwards;
+}
+@keyframes box2 {
+    0%{border: 4px solid;
+        box-shadow:0 0 27px;
+    }
+    100%{border: 4px solid;
+        box-shadow:#27272c;
+    }
+}
+
+@keyframes box {
+    0%{border: 4px solid;
+        box-shadow:#27272c;
+    }
+    100%{border: 4px solid;
+        box-shadow:0 0 27px;
+    }
+    
+}
+
+.west-north{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.east-south{
+    position: absolute;
+    bottom:0;
+    right:0;
+}
+form{
+    background-color:  #909AA81A;
+    
+width: 806px;
+height: 402px;
+position: absolute;
+top: 244px;
+left: 50%;
+transform: translateX(-50%);
+padding: 100px 0px 100px 0px;
+border-radius: 40px;
+gap: 80px;
+}
+form>*{
+    display:inline-block;
+}
+label{position: absolute;
+    top:100px;
+    left:224px;
+color:white;
+    font-family: 'Gropled',sans-serif;
+font-size: 48px;
+font-weight: 700;
+line-height: 84px;
+letter-spacing: 0em;
+text-align: left;
+}
+input{background-color: #909AA833;
+    font-size:20px;
+    font-weight: 700;
+    color:white;
+    margin:15px;
+    width: 494px;
+height:  30px;
+border: 4px solid;
+padding: 18px 24px 18px 24px;
+border-radius: 100px;
+font-family: 'Manrope',sans-serif;
+}
+#login:focus{
+    border-color: white;
+}
+
+.logbar{
+position: absolute;
+top:220px;
+left:50%;
+transform: translateX(-50%);
+}
+.inter{font-size:18px;
+    font-weight: 700;
+position: absolute;
+bottom:80px;
+display: flex;
+text-align: center;
+align-items: center;
+left:50%;
+transform: translateX(-50%);
+width: 217px;
+height: 60px;
+padding: 14px 30px 14px 30px;
+border-radius: 20px;
+background-color: #fff;
+border:3px solid white;
+box-shadow: inset 0 0 0 0 black;
+transition: ease-out 1.5s;
+outline: none;
+}
+.inter:hover{
+    
+    color:white;
+    box-shadow: inset 300px 0 0 0 black;
+    cursor: pointer;
+    
+}
+
+
+input:focus::placeholder  {
+    transform:  scale(0.8) translate(-60px, -30px);
+    font-weight: 700;
+    transition: transform 0.6s ease;
+    
+}
+input:valid::placeholder {
+    transition: transform 0.6s ease;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-placeholder>.eye {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 35px; 
+    width: 23px; 
+    height: 23px;
+    background-size: cover;
+    cursor: pointer; 
+  }
+
+
+img { 
+    user-select: none;
+    
+}
