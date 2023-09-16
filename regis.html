@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="regis.css">
+    <link rel="icon" href="profile_3135715.png" type="image/x-icon">
+</head>
+<body>  
+    <img  class="west-north" src="line3.svg">
+    <img  class="east-south" src="line4.svg">
+    <div class="container-header">
+
+    
+        <div onclick="window.location.href='index.html'" class="logo" ><img src="icon.svg"> ablerr</div>
+        
+    
+     <div class="container2">
+        <nav class="nav-bar">
+           <a href="" class="nav-item">Каталог товаров</a>
+           <a href="" class="nav-item">О компании</a>
+           <a href="" class="nav-item">Способы оплаты</a>
+           <a href="" class="nav-item">Контакты</a>
+        </nav>
+        <div class="login">
+            <button onclick="window.location.href='regis.html'" class="regis">Регистрация</button>
+            <button onclick="window.location.href='log.html'" class="log">Вход</button>
+        </div>
+    </div>  
+    
+    </div>
+    
+
+
+    <form>
+        <label>Регистрация</label>
+        <div class="logbar">
+            <div class="email-container"> 
+                <input id="login" placeholder="Логин" type="text" autocomplete="off">
+                
+            </div>
+            <div class="Email-container"> 
+                <input id="login" placeholder="Email" type="email" autocomplete="off">
+                
+            </div>
+            
+            
+        
+            <div class="input-container">
+                <input id="password" placeholder="Пароль" type="password">
+                
+                <span onclick="togglePasswordVisibility()" class="image-placeholder">
+                    <img class="eye" src="seen_6497663.png" alt="Показать пароль" data-visible="true">
+                    <img class="eye" src="hide_2767146.png" alt="Скрыть пароль" data-visible="false">
+                  </span>
+              </div>
+              <div class="input-container">
+                <input id="password2" placeholder="Повторный пароль" type="password">
+              
+                <span onclick="togglePasswordVisibility2()" class="image-placeholder">
+                    <img class="eye2" src="seen_6497663.png" alt="Показать пароль" data-visible="true">
+                    <img class="eye2" src="hide_2767146.png" alt="Скрыть пароль" data-visible="false">
+                  </span>
+              </div>
+            
+        </div>
+           
+                <button class="inter"  id=""><p>Зарегистрироваться</p></button>
+               
+               
+    </form>
+
+<script src="regis.js"></script>
+</body>
+</html>
