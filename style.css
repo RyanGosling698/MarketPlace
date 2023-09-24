@@ -706,9 +706,9 @@ color: white;
     height:1vh;
     z-index: 2;
 }
-.filled{border-radius:  0 20px 20px 20px;
+.filled{border-radius:  0;
     width: 0%;
-    height:20px;
+    height:10px;
     transition: .1s;
     background: linear-gradient(to right, #fc466b, #3f5efb);
 }
